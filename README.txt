@@ -1,4 +1,5 @@
-Спочатку потрібно встановити всі бібліотеки pip install fastapi uvicorn pydantic sqlalchemy. Також має бути
+Виконайте git clone https://github.com/1337Miko1337/Devforth-test-task.git
+Потім потрібно встановити всі бібліотеки pip install fastapi uvicorn pydantic sqlalchemy. Також має бути
 встановленим node.js.
 
 Для запуску потрібно запустити термінал та перейти в директорію testovoe, в якій знаходиться файл main.py
