@@ -46,7 +46,7 @@ async def roll(db: Session = Depends(get_db)):
 
     if 5 in counts:
         comb['yahtzee'] = True
-    elif 3 in counts and 2 in counts:
+    elif 4 in counts and 2 in counts:
         comb['full house'] = True
     elif counts.count(2) == 3 or 6 in counts or (4 in counts and 2 in counts):
         comb['three pairs'] = True
@@ -56,7 +56,7 @@ async def roll(db: Session = Depends(get_db)):
         comb['other'] = True
     if list(comb.values()).index(True) >= 0:
         if comb['pair']:
-            m = 1
+            m = 1       #коефіцієнт для комбінації
         elif comb['full house']:
             m = 2
         elif comb['yahtzee']:
